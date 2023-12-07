@@ -36,7 +36,7 @@ export const Layout = ({ children }: Props) => {
     <AntLayout aria-label="layout" className="layout">
       <Header role="heading">
         <Row alignItemsCenter>
-          <img alt="logo" height="50px" src="/images/imperium-logo.svg" />
+          <img alt="logo" height="50px" src="/images/logo_grey.svg" />
           {isActive && <Web3Header />}
         </Row>
       </Header>
@@ -44,7 +44,6 @@ export const Layout = ({ children }: Props) => {
       <Content aria-label="content">{isActive ? children : <ConnectWallet activateConnector={activateConnector} />}</Content>
 
       <Footer aria-label="footer">
-        <img alt="grey-imperium-logo" src="/images/grey-imperium.svg" />
       </Footer>
     </AntLayout>
   )

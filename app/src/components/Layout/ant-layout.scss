@@ -16,10 +16,17 @@
   }
 
   .ant-layout-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: $ant-layout-header-height;
     background-color: var(--header-color);
     color: var(--header-contrast-color);
     padding: 0 $normal;
+
+    > div {
+      width: 100%;
+    }
 
     h4 {
       color: var(--header-contrast-color);
