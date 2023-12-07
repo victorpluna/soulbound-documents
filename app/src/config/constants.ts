@@ -6,7 +6,7 @@ export const constants = {
   currencyMultiplicationFactor: 1_000,
   currencyMultiplicationAbbreviation: 'T',
   web3: {
-    contractAddress: '0xf444259Dafa9Eb94690D3d8f8831E40279e9A428',
-    chainId: 11155111,
+    contractAddress: process.env.REACT_APP_CONTRACT_ADDRESS || '0xf444259Dafa9Eb94690D3d8f8831E40279e9A428',
+    chainId: process.env.REACT_APP_CHAIN_ID || 11155111,
   },
 }
